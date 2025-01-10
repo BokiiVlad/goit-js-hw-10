@@ -6,11 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="iziToast.min.js" type="text/javascript"></script>
+    <script type="module" src="./js/1-timer.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/1-timer.css" />
+    <link rel="stylesheet" href="iziToast.min.css" />
   </head>
   <body>
     <main>
       <div class="container">
-        <h1 class="main-title">Snackbar</h1>
+        <h1 class="main-title">Timer</h1>
+        <input type="text" id="datetime-picker" />
+        <button class="button-main" type="button" data-start>Start</button>
+        <div class="timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
         <a class="back-link" href="./index.html">Go back</a>
       </div>
     </main>
