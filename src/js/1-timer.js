@@ -48,6 +48,7 @@ const options = {
 flatpickr(timeInput, options);
 
 butStart.addEventListener("click", () => {
+    butStart.disabled = true;
     const secondInterval = setInterval(() => {
         const timeDifferense = userSelectedDate - Date.now();
         const timeObj = convertMs(timeDifferense);
